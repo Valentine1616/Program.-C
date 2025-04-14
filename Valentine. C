@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    float balance = 50000.0;
+    float withdrawalAmount = 20000.0;
+    printf("Initial Mobile Money Balance: %.2f\n", balance);
+
+    if (withdrawalAmount > balance) {
+        printf("Insufficient funds!\n");
+    } else {
+        balance -= withdrawalAmount;
+        printf("Withdrawal Amount: %.2f\n", withdrawalAmount);
+        printf("Updated Mobile Money Balance: %.2f\n", balance);
+    }
+
+    return 0;
+}
